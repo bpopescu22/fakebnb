@@ -1,3 +1,3 @@
 # README
 
-This application.
+This application is.
