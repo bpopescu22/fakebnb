@@ -85,5 +85,6 @@ test:
 production:
   <<: *default
   database: fakebnb_production
-  username: postgres
+  username: postgresql
+  host: <%= ENV['DATABASE_URL'] %>
   password: <%= ENV['FAKEBNB_DATABASE_PASSWORD'] %>
