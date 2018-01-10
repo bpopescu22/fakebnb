@@ -1,0 +1,17 @@
+<h1>Homes</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th></th>
+  </tr>
+ 
+  <% @homes.each do |home| %>
+    <tr>
+      <td><%= home.title %></td>
+      <td><%= home.description %></td>
+      <td><%= link_to 'Show', home_path(home) %></td>
+    </tr>
+  <% end %>
+</table>
