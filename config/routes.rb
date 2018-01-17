@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout'}
   resources :homes
-  
-  root "homes#index"
 
+  root "homes#index"
+  
+  get "pages/home" => "pages#home"
 
   #root "pages#home"
 

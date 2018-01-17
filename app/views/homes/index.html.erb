@@ -9,7 +9,7 @@
  
   <% @homes.each do |home| %>
     <tr>
-      <td><%= home.title %></td>
+      <td><%= home.name %></td>
       <td><%= home.description %></td>
       <td><%= link_to 'Show', home_path(home) %></td>
     </tr>

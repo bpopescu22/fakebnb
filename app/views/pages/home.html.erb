@@ -1,5 +1,3 @@
-<% provide(:title, "Home") %>
-
 
 <div class="center jumbotron">
 	<h1>Welcome to FakeBNB</h1>
@@ -9,5 +7,17 @@
 	</h2>
 
 	<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
+
+  <% PropertyType.all.each do |property_type| %>
+    <tr>
+      <td><%= property_type.name %></td><br>
+    </tr>
+  <% end %>
+  <% RoomType.all.each do |property_type| %>
+    <tr>
+      <td><%= property_type.name %></td><br>
+    </tr>
+  <% end %>
 </div>
+
 
